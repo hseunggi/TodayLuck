@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TabbarController.swift
 //  TodayLuck
 //
 //  Created by hong on 2025/06/06.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TabbarController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +16,3 @@ class ViewController: UIViewController {
 
 
 }
-

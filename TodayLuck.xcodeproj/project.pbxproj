@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		F176CE7E2DF2EDDF001FF6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176CE7D2DF2EDDF001FF6DA /* AppDelegate.swift */; };
 		F176CE802DF2EDDF001FF6DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176CE7F2DF2EDDF001FF6DA /* SceneDelegate.swift */; };
-		F176CE822DF2EDDF001FF6DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176CE812DF2EDDF001FF6DA /* ViewController.swift */; };
+		F176CE822DF2EDDF001FF6DA /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176CE812DF2EDDF001FF6DA /* HomeController.swift */; };
 		F176CE852DF2EDDF001FF6DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F176CE832DF2EDDF001FF6DA /* Main.storyboard */; };
 		F176CE872DF2EDE5001FF6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F176CE862DF2EDE5001FF6DA /* Assets.xcassets */; };
 		F176CE8A2DF2EDE5001FF6DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F176CE882DF2EDE5001FF6DA /* LaunchScreen.storyboard */; };
+		F176CE922DF30F2E001FF6DA /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176CE912DF30F2E001FF6DA /* ResultController.swift */; };
+		F176CE942DF30F91001FF6DA /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176CE932DF30F91001FF6DA /* ListController.swift */; };
+		F176CE982DF33649001FF6DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F176CE972DF33648001FF6DA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F176CE7A2DF2EDDF001FF6DA /* TodayLuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayLuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F176CE7D2DF2EDDF001FF6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F176CE7F2DF2EDDF001FF6DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F176CE812DF2EDDF001FF6DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F176CE812DF2EDDF001FF6DA /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F176CE842DF2EDDF001FF6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F176CE862DF2EDE5001FF6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F176CE892DF2EDE5001FF6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F176CE8B2DF2EDE5001FF6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F176CE912DF30F2E001FF6DA /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
+		F176CE932DF30F91001FF6DA /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		F176CE972DF33648001FF6DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +62,16 @@
 		F176CE7C2DF2EDDF001FF6DA /* TodayLuck */ = {
 			isa = PBXGroup;
 			children = (
+				F176CE972DF33648001FF6DA /* GoogleService-Info.plist */,
 				F176CE7D2DF2EDDF001FF6DA /* AppDelegate.swift */,
 				F176CE7F2DF2EDDF001FF6DA /* SceneDelegate.swift */,
-				F176CE812DF2EDDF001FF6DA /* ViewController.swift */,
+				F176CE812DF2EDDF001FF6DA /* HomeController.swift */,
 				F176CE832DF2EDDF001FF6DA /* Main.storyboard */,
 				F176CE862DF2EDE5001FF6DA /* Assets.xcassets */,
 				F176CE882DF2EDE5001FF6DA /* LaunchScreen.storyboard */,
 				F176CE8B2DF2EDE5001FF6DA /* Info.plist */,
+				F176CE912DF30F2E001FF6DA /* ResultController.swift */,
+				F176CE932DF30F91001FF6DA /* ListController.swift */,
 			);
 			path = TodayLuck;
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F176CE8A2DF2EDE5001FF6DA /* LaunchScreen.storyboard in Resources */,
+				F176CE982DF33649001FF6DA /* GoogleService-Info.plist in Resources */,
 				F176CE872DF2EDE5001FF6DA /* Assets.xcassets in Resources */,
 				F176CE852DF2EDDF001FF6DA /* Main.storyboard in Resources */,
 			);
@@ -137,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F176CE822DF2EDDF001FF6DA /* ViewController.swift in Sources */,
+				F176CE922DF30F2E001FF6DA /* ResultController.swift in Sources */,
+				F176CE942DF30F91001FF6DA /* ListController.swift in Sources */,
+				F176CE822DF2EDDF001FF6DA /* HomeController.swift in Sources */,
 				F176CE7E2DF2EDDF001FF6DA /* AppDelegate.swift in Sources */,
 				F176CE802DF2EDDF001FF6DA /* SceneDelegate.swift in Sources */,
 			);
