@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA068D4B4E327F29B66ABC53 /* Pods_TodayLuck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93480D8770CB104D55F987E1 /* Pods_TodayLuck.framework */; };
 		F176CE7E2DF2EDDF001FF6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176CE7D2DF2EDDF001FF6DA /* AppDelegate.swift */; };
 		F176CE802DF2EDDF001FF6DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176CE7F2DF2EDDF001FF6DA /* SceneDelegate.swift */; };
 		F176CE822DF2EDDF001FF6DA /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176CE812DF2EDDF001FF6DA /* HomeController.swift */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65F7E730D680DA232BD8F5DE /* Pods-TodayLuck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayLuck.release.xcconfig"; path = "Target Support Files/Pods-TodayLuck/Pods-TodayLuck.release.xcconfig"; sourceTree = "<group>"; };
+		93480D8770CB104D55F987E1 /* Pods_TodayLuck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayLuck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12CAD734F7C1CE382C3D84D /* Pods-TodayLuck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayLuck.debug.xcconfig"; path = "Target Support Files/Pods-TodayLuck/Pods-TodayLuck.debug.xcconfig"; sourceTree = "<group>"; };
 		F176CE7A2DF2EDDF001FF6DA /* TodayLuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayLuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F176CE7D2DF2EDDF001FF6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F176CE7F2DF2EDDF001FF6DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA068D4B4E327F29B66ABC53 /* Pods_TodayLuck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2137518E5868E4A6F6F09A65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A12CAD734F7C1CE382C3D84D /* Pods-TodayLuck.debug.xcconfig */,
+				65F7E730D680DA232BD8F5DE /* Pods-TodayLuck.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB3BDB9BC85226B3F321D48F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93480D8770CB104D55F987E1 /* Pods_TodayLuck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F176CE712DF2EDDF001FF6DA = {
 			isa = PBXGroup;
 			children = (
 				F176CE7C2DF2EDDF001FF6DA /* TodayLuck */,
 				F176CE7B2DF2EDDF001FF6DA /* Products */,
+				2137518E5868E4A6F6F09A65 /* Pods */,
+				CB3BDB9BC85226B3F321D48F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F176CE8E2DF2EDE5001FF6DA /* Build configuration list for PBXNativeTarget "TodayLuck" */;
 			buildPhases = (
+				570CDD1748AF07650F45B649 /* [CP] Check Pods Manifest.lock */,
 				F176CE762DF2EDDF001FF6DA /* Sources */,
 				F176CE772DF2EDDF001FF6DA /* Frameworks */,
 				F176CE782DF2EDDF001FF6DA /* Resources */,
+				DF75F09FAB9E410832285C95 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +168,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		570CDD1748AF07650F45B649 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TodayLuck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF75F09FAB9E410832285C95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodayLuck/Pods-TodayLuck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodayLuck/Pods-TodayLuck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodayLuck/Pods-TodayLuck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F176CE762DF2EDDF001FF6DA /* Sources */ = {
@@ -295,6 +364,7 @@
 		};
 		F176CE8F2DF2EDE5001FF6DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A12CAD734F7C1CE382C3D84D /* Pods-TodayLuck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +383,7 @@
 		};
 		F176CE902DF2EDE5001FF6DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F7E730D680DA232BD8F5DE /* Pods-TodayLuck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
