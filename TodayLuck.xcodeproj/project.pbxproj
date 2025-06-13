@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		F176CE922DF30F2E001FF6DA /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176CE912DF30F2E001FF6DA /* ResultController.swift */; };
 		F176CE942DF30F91001FF6DA /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176CE932DF30F91001FF6DA /* ListController.swift */; };
 		F176CE982DF33649001FF6DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F176CE972DF33648001FF6DA /* GoogleService-Info.plist */; };
+		F17D8C2C2DFADBBD00F361CC /* apikeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = F17D8C2B2DFADBBD00F361CC /* apikeys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F176CE912DF30F2E001FF6DA /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
 		F176CE932DF30F91001FF6DA /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		F176CE972DF33648001FF6DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F17D8C2B2DFADBBD00F361CC /* apikeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = apikeys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,6 @@
 				A12CAD734F7C1CE382C3D84D /* Pods-TodayLuck.debug.xcconfig */,
 				65F7E730D680DA232BD8F5DE /* Pods-TodayLuck.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -97,6 +98,7 @@
 				F176CE8B2DF2EDE5001FF6DA /* Info.plist */,
 				F176CE912DF30F2E001FF6DA /* ResultController.swift */,
 				F176CE932DF30F91001FF6DA /* ListController.swift */,
+				F17D8C2B2DFADBBD00F361CC /* apikeys.plist */,
 			);
 			path = TodayLuck;
 			sourceTree = "<group>";
@@ -162,6 +164,7 @@
 			files = (
 				F176CE8A2DF2EDE5001FF6DA /* LaunchScreen.storyboard in Resources */,
 				F176CE982DF33649001FF6DA /* GoogleService-Info.plist in Resources */,
+				F17D8C2C2DFADBBD00F361CC /* apikeys.plist in Resources */,
 				F176CE872DF2EDE5001FF6DA /* Assets.xcassets in Resources */,
 				F176CE852DF2EDDF001FF6DA /* Main.storyboard in Resources */,
 			);

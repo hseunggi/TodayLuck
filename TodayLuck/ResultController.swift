@@ -15,28 +15,34 @@ class ResultController: UIViewController {
 
     var source: SourceController?
     var userInput: String?
+    var fortuneData: HomeController.FortuneData?
+    
     @IBOutlet weak var inputLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var fortuneLabel: UILabel!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if let input = userInput {
-                    inputLabel.text = "입력: \(input)"
-                    // 예시로 간단한 이미지 조건 분기
-                    if input.contains("기쁨") {
-                        imageView.image = UIImage(named: "happy")
-                    } else {
-                        imageView.image = UIImage(named: "default")
-                    }
 
-                    // 이후 OpenAI API로 운세 받아오고 label, firestore 저장 등 추가 가능
-                }
         
-        // Do any additional setup after loading the view.
-    }
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            inputLabel.text = "입력: \(userInput ?? "")"
+            guard let data = fortuneData else { return }
+            
+            fortuneLabel.text = data.message
+            
+            if data.type == "special" && data.value == "fortune" {
+                    imageView.image = UIImage(named: "fortune")  // fortune.png
+                } else {
+                    let imageName = "\(data.type)_\(data.value)" // 예: mood_행복, situation_직장
+                    if let image = UIImage(named: imageName) {
+                        imageView.image = image
+                    } else {
+                        imageView.image = UIImage(named: "default") // 없을 경우 대체 이미지
+                    }
+                }
+        }
+
 
 
 }
