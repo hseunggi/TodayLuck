@@ -25,13 +25,12 @@ TodayLuck은 사용자가 매일 간단한 입력을 통해 오늘의 운세를 
 ## 🛠️ 주요 적용 기술 및 구조  
 
 ### 📱 개발 환경  
-- OS: macOS (Xcode 실행 환경)  
-- Xcode 버전: 최신 버전 사용 (예: Xcode 15)  
-- 타겟 기기: iPhone / iPod touch (iOS 14 이상)
+- OS: macOS (VMware 가상 머신에서 구동)   
+- Xcode 버전: 12.5 
 
 ### ⚙️ 개발 도구  
 - **Xcode**: 스토리보드 기반 UI 설계  
-- **Firebase Console**: Firestore 설정 및 테스트 데이터 관리
+- **Firebase**: Firestore를 사용하여 운세 데이터를 실시간으로 저장 및 조회
 
 ### 💻 개발 언어  
 - **Swift**: Apple 공식 프로그래밍 언어
