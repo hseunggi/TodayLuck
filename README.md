@@ -37,14 +37,14 @@ TodayLuck은 사용자가 매일 간단한 입력을 통해 오늘의 운세를 
 
 ---
 
-## 🎥 작품 소개 사진  
-> (예: 앱 화면 캡처 이미지 추가 예정)
-![image](https://github.com/user-attachments/assets/c1c05220-4e5e-4239-a871-da5309bf0434)
-![image](https://github.com/user-attachments/assets/6c946ae8-197c-49b0-9605-368597e857d7)
-![image](https://github.com/user-attachments/assets/7be52eab-4ef6-4fa5-bf31-fbfde2ce2f04)
-![image](https://github.com/user-attachments/assets/6607eda9-4275-43ad-be48-e200aeb02669)
-![image](https://github.com/user-attachments/assets/18966d82-f53f-4ca1-8e88-92e52679185a)
-![image](https://github.com/user-attachments/assets/9c725f5e-9644-4226-8cfb-d1767d358070)
+## 🎥 작품 소개 사진
+
+![image](https://github.com/user-attachments/assets/24014f33-562f-43d8-b4cc-4694f60fb5d1)
+![image](https://github.com/user-attachments/assets/d5a8502d-2d48-462a-b31a-9b922dca5c4d)
+![image](https://github.com/user-attachments/assets/0e4a6ac4-abe8-4290-9c9c-5d98b5fe0503)
+![image](https://github.com/user-attachments/assets/c657061e-8bb1-4560-82d9-f71aac6492ae)
+![image](https://github.com/user-attachments/assets/36da6471-5e44-4a1e-a008-46d77f79a893)
+![image](https://github.com/user-attachments/assets/90db3601-d00a-4d10-acc6-71314cefd7ca)
 
 ---
 
