@@ -42,6 +42,7 @@ TodayLuck은 사용자가 매일 간단한 입력을 통해 오늘의 운세를 
 ![image](https://github.com/user-attachments/assets/24014f33-562f-43d8-b4cc-4694f60fb5d1)
 ![image](https://github.com/user-attachments/assets/d5a8502d-2d48-462a-b31a-9b922dca5c4d)
 ![image](https://github.com/user-attachments/assets/0e4a6ac4-abe8-4290-9c9c-5d98b5fe0503)
+
 ![image](https://github.com/user-attachments/assets/c657061e-8bb1-4560-82d9-f71aac6492ae)
 ![image](https://github.com/user-attachments/assets/36da6471-5e44-4a1e-a008-46d77f79a893)
 ![image](https://github.com/user-attachments/assets/90db3601-d00a-4d10-acc6-71314cefd7ca)
